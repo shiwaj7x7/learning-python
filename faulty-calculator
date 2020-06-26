@@ -1,0 +1,23 @@
+print('type number 1:')
+a= int(input())
+print('type number 2:')
+b= int(input())
+print('your operation is:')
+operator= input()
+if operator == '+':
+    if a==56 and b==9:
+        print(56,'+',9,'=',77)
+    else:
+        print(a, '+', b, '=', a + b)
+if operator == '-':
+    print(a,'-',b,'=',a-b)
+if operator == '*':
+    if a==45 and b==3:
+        print(45,'*',3,'=',555)
+    else:
+        print(a, '*', b, '=', a * b)
+if operator == '/':
+    if a==56 and b==6:
+        print(56,'/',6,'=',4)
+    else:
+        print(a, '/', b, '=', a / b)
