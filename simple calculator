@@ -1,0 +1,14 @@
+print('type number 1:')
+a= int(input())
+print('type number 2:')
+b= int(input())
+print('your operation is:')
+operator= input()
+if operator == '+':
+        print(a, '+', b, '=', a + b)
+if operator == '-':
+    print(a,'-',b,'=',a-b)
+if operator == '*':
+        print(a, '*', b, '=', a * b)
+if operator == '/':
+        print(a, '/', b, '=', a / b)
