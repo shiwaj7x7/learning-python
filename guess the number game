@@ -1,0 +1,21 @@
+n= 18
+a= 5
+print("your available number of attempts is:",a)
+while True:
+    i= int(input('GUESS THE NUMBER:'))
+    if i==n :
+        print("you guessed the number right")
+        print("you have guessed it while remaining no. of attempts is:",a)
+        break
+    elif i>n:
+        print("your guess is higher than the number, aukaat mein aa jaao please")
+        print("you have wasted your 1 attempt")
+        a = a - 1
+        print(a)
+        continue
+    elif i<n:
+        print('your number is shorter than actual no... thorda bada sochlo zindagi mein bhaai')
+        print("you have wasted your 1 attempt")
+        a = a - 1
+        print(a)
+        continue
