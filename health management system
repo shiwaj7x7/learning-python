@@ -1,0 +1,22 @@
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+
+client = str(input("name of the client:"))
+detail = int(input("type 1 for diet or 2 for exercises prescribed:"))
+def hms(clientname):
+    if detail==1:
+        print(getdate())
+        with open(clientname + "diet.txt") as f:
+            print(f.readline(), end="")
+            print(f.readline(), end="")
+            print(f.readline(), end="")
+            print(f.readline())
+    if detail==2:
+    print(getdate())
+        with open(clientname + "exercises.txt") as f:
+            print(f.readline(), end="")
+            print(f.readline(), end="")
+            print(f.readline(), end="")
+            print(f.readline())
+hms(client)
